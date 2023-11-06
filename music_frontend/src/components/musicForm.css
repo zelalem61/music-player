@@ -1,0 +1,97 @@
+.floating-label {
+    position: relative;
+    width: 500px;
+    padding-bottom: 15px;
+  }
+  .floating-label input {
+    width: 72%;
+    padding: 15px;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 5px;
+    outline: none;
+    background: #1d2b3a;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .floating-label label {
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    padding: 10px;
+    transition: 0.3s ease;
+    color: rgba(255,255,255,0.25);
+    font-size: 1em;
+    text-transform: uppercase;
+  }
+  
+  .floating-label input:focus + label,
+  .floating-label input:valid + label {
+    transform: translateX(10px) translateY(-7px);
+    color: #00dfc4;
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #1d2b3a;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    letter-spacing: 0.2em;
+  }
+
+  .floating-label input:focus ,
+  .floating-label input:valid {
+    border: 1px solid #00dfc4;
+  } 
+
+  .custom-button {
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    background: #1d2b3a;
+    color: #fff;
+    font-size: 1rem;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .custom-button:hover {
+    background: #1d2b3f;
+    border: 1px solid #00dfc4;
+  }
+
+
+.modal {
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.modal-content {
+  background-color: #1d2b3a;
+  color: #fff;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  max-width: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #00dfc4;
+}

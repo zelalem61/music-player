@@ -1,0 +1,20 @@
+/* SidebarBottomBarScreen.css */
+
+/* Define a class for the open sidebar */
+.sidebar-open .bg-blue-200 {
+    transform: translateX(0);
+  }
+  
+  /* Define transition for smooth animation */
+  .bg-blue-200 {
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+  }
+  
+  /* Style for the toggle button */
+  .toggle-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  

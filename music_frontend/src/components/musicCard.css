@@ -1,0 +1,106 @@
+.music-card {
+  display: flex;
+  padding: 10px 0px;
+  margin:  13px 0px;
+  margin-left: -10px;
+  width: 330px;
+  height: 55px;
+  background-color: #101726;
+  cursor: pointer;
+  align-items: center;
+}
+
+.music-image {
+  flex: 1;
+  padding-top: 7px;
+}
+.ellipsis {
+  cursor: pointer;
+  font-size: 24px;
+  padding-left: 15px; 
+  color: rgb(129, 129, 129);
+}
+
+.music-image img {
+  width: 50px;
+  height: 50px;
+  margin-top: -10px;
+  margin-left: 15px;
+
+}
+
+.music-details {
+  flex: 2;
+  padding: 0 10px;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+.music-details h3{
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: -6px;
+  margin-left: 14px;
+  color: white;
+}
+.music-details p{
+  font-size: 13px;
+  margin-left: 14px;
+  color: white;
+}
+
+.actions {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+
+.actions-popup{
+  background-color: aqua;
+
+}
+
+.actions-popup {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #0ebe98;
+  border: 1px solid #1ec99e;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column; /* Arrange actions vertically */
+}
+
+.actions-popup button {
+  border: none;
+  background: none;
+  padding: 4px 16px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.actions-popup button:hover {
+  background-color: #df8028;
+}
+
+.bottom{
+  display: flex;
+}
+
+
+
+@media (max-width: 912px) {
+  .music-card{
+    width: 200px;
+  }
+
+  .music-details p{
+    font-size: 10px;
+  }
+  .music-details h3{
+    font-size: 10px;
+  }
+}

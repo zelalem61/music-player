@@ -1,0 +1,158 @@
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.55fr 1.45fr; 
+    grid-template-rows: 3.6fr 0.4fr;
+    grid-template-areas: 
+      "left-sidebar main-content"
+      "bottom-content bottom-content"; 
+    height: 100vh; 
+    width: 100vw;
+  }
+  .header{
+    margin-top: -20px;
+  }
+  
+  .left-sidebar::-webkit-scrollbar {
+    width: 2px; 
+  }
+  
+  .left-sidebar::-webkit-scrollbar-thumb {
+    background-color: #a57620; 
+    border-radius: 4px; 
+  }
+  
+
+
+  
+  .left-sidebar {
+    grid-area: left-sidebar;
+    background-color: #0f1625; 
+    padding: 1rem;
+    overflow-y: auto;
+   
+  }
+ 
+  .scrollable-content {
+    padding: 10px;
+  }
+  .main-content {
+    grid-area: main-content; 
+    background: linear-gradient(to bottom, #2a7f7d, #0c1121); 
+    padding: 1rem;
+    overflow-y: hidden;
+  }
+  html, body {
+    width: 100%; 
+    margin: 0; 
+    overflow-x: hidden; 
+  }
+  
+  .bottom-content {
+    grid-area: bottom-content; 
+    background-color: #212f40; 
+    padding: 0.4rem;
+    /* margin-top: 30px; */
+  }
+  .playing-music{
+    margin-top: 4px;
+    margin-left: 20px
+  }
+ .bottom{
+  margin: -20px 0;
+  display: flex;
+ }
+ .pointer{
+  margin: 37px;
+  margin-left: 70px;
+ }
+ .volume{
+  margin-top: 37px;
+  margin-left: 200px;
+ }
+.music-container {
+  display: flex;
+  align-items: center;
+  margin-top: -50px;
+  margin-left: -20px;
+  height: 250px;
+  
+}
+
+.music-info {
+  flex: 1;
+  align-items: start;
+  justify-content: center;
+}
+
+.music-name {
+  font-size: 26px;
+  margin-left: 60px;
+  margin-top: 70px;
+  color: white;
+  font-family: 'Brush Script MT', cursive;
+}
+
+
+.lyrics{
+  font-size: 15px;
+  margin: 0;
+  margin-left:  60px;
+  width: 250px;
+  font-family: 'Times New Roman', serif;
+  color: bisque;
+}
+
+.popular-music-container {
+  background-color: transparent;
+  padding: 20px;
+  margin-top: 100px;
+  z-index: 1;
+
+}
+
+.popular-music-container h2 {
+  font-size: 25px;
+  color: white;
+  margin-bottom: -30px;
+  font-family: 'Trebuchet MS', sans-serif;
+  color: rgb(122, 206, 154);
+}
+
+
+.avatar{
+  display: flex;
+  gap: 50px;
+  margin-top: 70px;
+  overflow-x: auto;
+  cursor: pointer;
+}
+.avatar::-webkit-scrollbar {
+  width: 0px; 
+}
+
+.avatar::-webkit-scrollbar-thumb {
+  background-color: #0c1121; 
+  border-radius: 0px; 
+}
+.next-back{
+  display: flex;
+  margin-top: 25px;
+  margin-left: 30px;
+  gap: 10px;
+}
+.next-back img{
+  width: 35px;
+  height: 35px;
+}
+
+
+
+
+/* @media (max-width: 912px) {
+  .grid-container {
+    display: block; 
+    height: auto; 
+    width: auto; 
+  }
+} */
