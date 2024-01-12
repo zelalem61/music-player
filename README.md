@@ -1,8 +1,8 @@
 ## Screenshots
 
-[Screenshot image 1](./images/image1.png)
-[Screenshot image 2](./images/image2.png)
-[Screenshot image 3](./images/image3.png)
+![Screenshot image 1](./images/image1.png)
+![Screenshot image 2](./images/image2.png)
+![Screenshot image 3](./images/image3.png)
 
 ## Getting Started
 
