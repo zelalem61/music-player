@@ -1,3 +1,9 @@
+## Screenshots
+
+[Screenshot image 1](./images/image1.png)
+[Screenshot image 2](./images/image2.png)
+[Screenshot image 3](./images/image3.png)
+
 ## Getting Started
 
 Follow these steps to set up and run Temene on your local machine.
